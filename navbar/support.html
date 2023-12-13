@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        body {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          flex-grow: 1;
+          font-size: large;
+          justify-content: center;
+          align-items: center;
+          background: rgb(34,193,195);
+background: radial-gradient(circle, rgba(34,193,195,1) 1%, rgba(253,187,45,1) 100%);
+        }
+      </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html" class="nav-logo"><img src="./logo.png" alt=""></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./support.html" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome to the Support Page! 😇 </h1>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
