@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Image Change</title>
+    <link rel="stylesheet" href="./globalproduct.css" />
+    <script
+      src="https://kit.fontawesome.com/6616897a52.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="product-div">
+          <div class="product-div-left">
+            <div class="img-container">
+              <img src="./assects/15plus.png" alt="apple" />
+            </div>
+            <div class="hover-container">
+              <div><img src="./assects/15plus.png" /></div>
+              <div><img src="./assects/15plusgreen.webp" /></div>
+              <div><img src="./assects/15pluspink.webp" /></div>
+              <div><img src="./assects/15plusyellow.webp" /></div>
+            </div>
+          </div>
+          <div class="product-div-right">
+            <span class="product-name"
+              ><i class="fa-brands fa-apple"></i> APPLE  <br><br><u>IPHONE 15 PLUS</u></span
+            >
+            <span class="product-price">₹119,900.00</span>
+            <div class="product-rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <!-- <span><i class="fas fa-star-half-alt"></i></span> -->
+              <span>(2350 ratings)</span>
+            </div>
+            <p class="product-description">
+              Display: 6.7 inches (17 cm), Super Retina XDR Display Memory:
+              128GB ROM Processor: Apple A16 Bionic Chip, Hexa Core Camera: 48
+              MP + 12 MP Dual Rear & 12 MP Front Camera Battery: 15W MagSafe
+              Wireless Charging USP: Dynamic Island, IP68 Water Resistant
+            </p>
+            <div class="cable-config">
+              <br /><br />
+              <!-- Internal storage -->
+              <span>Internal Storage</span><br>
+              <div class="cable-choose">
+                <button class="onebtn">128GB</button>
+                <button class="twobtn">256GB</button>
+                <button class="threebtn">512GB</button>
+              </div>
+            </div>
+            <div class="btn-groups">
+              <button type="button" class="add-cart-btn">
+                <i class="fas fa-shopping-cart"></i>add to cart
+              </button>
+              <button type="button" class="buy-now-btn">
+                <i class="fas fa-wallet"></i>buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./indexproduct.js"></script>
+    <script>
+      const firstPrice = document.querySelector(".onebtn");
+      const secondPrice = document.querySelector(".twobtn");
+      const threePrice = document.querySelector(".threebtn");
+      const productprice = document.querySelector(".product-price");
+
+      firstPrice.addEventListener("click", () => {
+        productprice.innerText = "₹89,900.00";
+      });
+      secondPrice.addEventListener("click", () => {
+        productprice.innerText = "₹99,900.00";
+      });
+      threePrice.addEventListener("click", () => {
+        productprice.innerText = "₹119,900.00";
+      });
+    </script>
+  </body>
+</html>

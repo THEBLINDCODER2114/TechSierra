@@ -24,21 +24,23 @@
         <div class="product-div">
           <div class="product-div-left">
             <div class="img-container">
-              <img src="./assects/se.webp" alt="apple"/>
+              <img src="./assects/se.webp" alt="apple" />
             </div>
             <div class="hover-container">
-              <div><img src="./assects/se.webp"/></div>
-              <div><img src="./assects/newsestarlight.webp"/></div>
-              <div><img src="./assects/semidnight.webp"/></div>
+              <div><img src="./assects/se.webp" /></div>
+              <div><img src="./assects/newsestarlight.webp" /></div>
+              <div><img src="./assects/semidnight.webp" /></div>
               <!-- <div><img src = "images/w4.png"></div>
                         <div><img src = "images/w5.png"></div> -->
             </div>
           </div>
           <div class="product-div-right">
             <span class="product-name"
-              ><i class="fa-brands fa-apple"></i>APPLE</span
+              ><i class="fa-brands fa-apple"></i> APPLE <br /><br /><u
+                >IPHONE SE</u
+              ></span
             >
-            <span class="product-price">₹58,900.00</span>
+            <span class="product-price">₹43,900.00</span>
             <div class="product-rating">
               <span><i class="fas fa-star"></i></span>
               <span><i class="fas fa-star"></i></span>
@@ -56,11 +58,11 @@
             <div class="cable-config">
               <br /><br />
               <!-- Internal storage -->
-              <span>Internal Storage</span>
+              <span>Internal Storage</span> <br />
               <div class="cable-choose">
-                <button>64GB</button>
-                <button>128GB</button>
-                <button>256GB</button>
+                <button class="onebtn">64GB</button>
+                <button class="twobtn">128GB</button>
+                <button class="threebtn">256GB</button>
               </div>
             </div>
             <div class="btn-groups">
@@ -75,7 +77,22 @@
         </div>
       </div>
     </div>
-
     <script src="./indexproduct.js"></script>
+    <script>
+      const firstPrice = document.querySelector(".onebtn");
+      const secondPrice = document.querySelector(".twobtn");
+      const threePrice = document.querySelector(".threebtn");
+      const productprice = document.querySelector(".product-price");
+
+      firstPrice.addEventListener("click", () => {
+        productprice.innerText = "₹43,900.00";
+      });
+      secondPrice.addEventListener("click", () => {
+        productprice.innerText = "₹48,900.00";
+      });
+      threePrice.addEventListener("click", () => {
+        productprice.innerText = "₹58,900.00";
+      });
+    </script>
   </body>
 </html>

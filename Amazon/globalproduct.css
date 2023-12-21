@@ -23,7 +23,7 @@ img{
 }
 .container{
     max-width: 1300px;
-    height: 555px;
+    height: 600px;
     padding: 0 1rem;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12)
@@ -46,14 +46,15 @@ img{
     align-items: center;
     flex-direction: column;
 }
-.product-div-right{
+/* .product-div-right{
     padding: 20px;
-}
+} */
 .img-container img{
     width: 300px;
     margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(0 0 0) 1px 5px 20px 3px;
     border-radius: 15px;
+    background-color: #000;
 }
 .hover-container{
     display: flex;
@@ -83,6 +84,7 @@ img{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
      border-radius: 15px;
     cursor: pointer;
+    background-color: #2b2b2b;
 }
 .product-div-right span{
     display: block;
@@ -92,12 +94,12 @@ img{
     margin-bottom: 22px;
     font-weight: 700;
     letter-spacing: 1px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 .product-price{
     font-weight: 700;
     font-size: 24px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     font-weight: 500;
 }
 .product-rating{
@@ -114,6 +116,10 @@ img{
     margin-top: 22px;
 }
 /* Cable Configuration */
+.cable-config span{
+    font-size:x-large;
+    color: #000;
+}
 .cable-choose {
     margin-bottom: 20px;
   }
@@ -169,7 +175,7 @@ img{
     color: #000;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 980px){
     .product-div{
         grid-template-columns: 100%;
     }
@@ -184,11 +190,21 @@ img{
         margin-right: auto;
         margin-left: auto;
     }
+    .container{
+        height: 1054px;
+    }
 }
 
 @media screen and (max-width: 400px){
     .btn-groups button{
         width: 100%;
         margin-bottom: 10px;
+    }
+}@media screen and (max-width: 280px){
+    .img-container img {
+        width: 198px;
+        margin: 0 auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
     }
 }

@@ -1,0 +1,24 @@
+.App{
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid;
+}
+input{
+  background-color: rgb(227, 227, 227);
+}
+button {
+  font-weight: bold;
+  background: red;
+  border: none;
+  color: white;
+  padding: 1%;
+}
